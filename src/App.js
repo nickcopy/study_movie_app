@@ -1,53 +1,50 @@
-import React from "react";
-//스테이타는 동적데이터를 다룰때사용하는 리엑트 요소
-// function App() {
-//   return (
-//     <div>
-
-//     </div>
-//   );
-// }
-// class App extends React.Component {
-//   render() {
-//     return <div>클래스 컴포넌트</div>;
-//   }
-// }
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      count: 465,
-    };
-  }
-  증가함수 = () => {
-    console.log("증가함수 호출됨");
-    this.setState(function (현제state) {
-      return {
-        count: 현제state.count + 100,
-      };
-    });
-    // this.setState({ count: this.state.count + 1 });
-  };
-  감소함수 = () => {
-    console.log("감소함수 호출됨");
-    this.setState(function (현제state) {
-      return {
-        count: 현제state.count - 200,
-      };
-    });
-    // this.setState({
-    //   count: this.state.count - 1,
-    // });
-  };
-
-  render() {
-    return (
-      <div>
-        <h1>카운터 : {this.state.count}</h1>
-        <button onClick={this.증가함수}>+1</button>{" "}
-        <button onClick={this.감소함수}>-1</button>
-      </div>
+import axios from "axios";
+import React, { useEffect, useState } from "react";
+import Movie from "./components/Movie";
+import "./App.css";
+function App(props) {
+  const [loading, setLoaing] = useState(true);
+  const [movies, setMovies] = useState([]);
+  async function getMovieAPI() {
+    if (0 < movies.length) return;
+    const result = await axios.get(
+      "https://api.themoviedb.org/3/movie/popular?api_key=b0b52c87cbad9085feb8750a76475d96&language=ko&page=1&region=kr"
     );
+    console.log(result.data.results.title);
+    setMovies(result.data.results);
+    setLoaing(false);
   }
+  useEffect(
+    function () {
+      getMovieAPI();
+    },
+    [loading, movies]
+  );
+
+  return (
+    <>
+      {loading ? (
+        <div>로딩중....</div>
+      ) : (
+        <>
+          {movies.map(function (ele) {
+            return (
+              <Movie
+                key={ele.id}
+                title={ele.title}
+                backdrop_path={ele.backdrop_path}
+                overview={ele.overview}
+                vote_average={ele.vote_average}
+                adult={ele.adult}
+                original_language={ele.original_language}
+                release_date={ele.release_date}
+                id={ele.id}
+              />
+            );
+          })}
+        </>
+      )}
+    </>
+  );
 }
 export default App;

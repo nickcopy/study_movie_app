@@ -1,0 +1,52 @@
+.movie_data {
+  background-color: white;
+  margin: 30px;
+  padding: 30px;
+  color: grey;
+  position: relative;
+}
+.movie_title {
+  color: black;
+  font-size: xx-large;
+  border-bottom: 1px solid grey;
+}
+.movie_infor {
+  color: white;
+  border: 1px solid gray;
+  background-color: grey;
+  font-weight: bold;
+  border-radius: 50px;
+  padding: 5px 10px;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px, 5px,
+    15px rgba(0, 0, 0, 0);
+  box-shadow: 5px 5px 10px 8px #000000, 5px, 5px, 15px rgba(0, 0, 0, 0);
+}
+.movie_id {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  z-index: 1;
+}
+.movie_date {
+  position: absolute;
+  bottom: 5px;
+  right: 20px;
+}
+.movie_adult {
+  color: white;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  z-index: 999;
+  border-radius: 50%;
+  font-weight: bold;
+}
+.movie_poster {
+  display: inline-block;
+  position: relative;
+}
+.movie_lang {
+  text-transform: uppercase;
+}
