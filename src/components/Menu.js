@@ -38,6 +38,9 @@ function Menu() {
             <Link to="#">🗺about us......</Link>
           </li>
           <li>
+            <Link to="/youtube">youtube 클론</Link>
+          </li>
+          <li>
             <Link to="/count">count</Link>
           </li>
         </ul>

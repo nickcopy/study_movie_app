@@ -9,7 +9,7 @@ function MovieList(props) {
   const [flag, setFlag] = useState(false);
   setTimeout(() => {
     setFlag(true);
-  }, 30);
+  }, 10);
   async function getMovieAPI() {
     if (!props.apipath) return;
 

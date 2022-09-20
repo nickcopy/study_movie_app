@@ -1,0 +1,66 @@
+.yt__top {
+  background-color: grey;
+  display: flex;
+  justify-content: space-between;
+}
+.time {
+  font-size: 25px;
+  margin-left: 50px;
+  margin-top: 0px;
+
+  color: white;
+}
+.icon {
+  color: white;
+  align-items: conter;
+  padding-right: 20px;
+
+  display: flex;
+  justify-content: space-between;
+}
+.lte {
+  display: flex;
+  margin: 8px;
+}
+.wifi {
+  margin-top: 5px;
+}
+.batter {
+  margin-top: 5px;
+}
+.ty__top2 {
+  background-color: gray;
+  display: flex;
+  justify-content: space-between;
+}
+.title {
+  margin-left: 20px;
+  color: white;
+  font-size: 30px;
+}
+.conserv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.centericon {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+.propil {
+  font-size: 18px;
+  font-weight: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 8px;
+  background-color: black;
+  border-radius: 50%;
+  width: 40px;
+  height: 36px;
+}
+.titleicon {
+  background-color: red;
+  color: white;
+}
