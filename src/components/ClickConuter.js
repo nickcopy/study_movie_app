@@ -2,12 +2,13 @@ import React, { useCallback, useState } from "react";
 import "./App.css";
 
 function ClickConuter(props) {
-  let [count, setConut] = useState();
-  let [countId, setCountId] = useState();
+  let [count, setConut] = useState(0);
+  let [countId, setCountId] = useState(0);
   function start() {
     setCountId(
       (countId = setInterval(() => {
         setConut(function (conut) {
+          console.log(count);
           return count++;
         });
       }, 100))

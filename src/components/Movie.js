@@ -3,7 +3,7 @@ import "./MovieAPI.css";
 function Movie(props) {
   return (
     <div className="movie_data movie_info">
-      <div class="movie_poster">
+      <div className="movie_poster">
         <img
           src={`https://image.tmdb.org/t/p/original${props.backdrop_path}`}
           style={{ maxWidth: "50vh" }}
@@ -37,7 +37,7 @@ function Movie(props) {
 Movie.propTypes = {
   id: PropTypes.number.isRequired,
   title: PropTypes.string.isRequired,
-  backdrop_path: PropTypes.string.isRequired,
+  backdrop_path: PropTypes.string,
   overview: PropTypes.string.isRequired,
   original_language: PropTypes.string.isRequired,
   vote_average: PropTypes.number.isRequired,

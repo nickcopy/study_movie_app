@@ -1,50 +1,40 @@
-import axios from "axios";
-import React, { useEffect, useState } from "react";
-import Movie from "./components/Movie";
-import "./App.css";
-function App(props) {
-  const [loading, setLoaing] = useState(true);
-  const [movies, setMovies] = useState([]);
-  async function getMovieAPI() {
-    if (0 < movies.length) return;
-    const result = await axios.get(
-      "https://api.themoviedb.org/3/movie/popular?api_key=b0b52c87cbad9085feb8750a76475d96&language=ko&page=1&region=kr"
-    );
-    console.log(result.data.results.title);
-    setMovies(result.data.results);
-    setLoaing(false);
-  }
-  useEffect(
-    function () {
-      getMovieAPI();
-    },
-    [loading, movies]
-  );
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import Movie from "./components/Movie";
+import MovieList from "./components/MoviesList";
+import Clickc from "./components/ClickConuter";
+import Menu from "./components/Menu";
+function Home() {
+  return <h2>홈</h2>;
+}
+function About() {
+  return <h2>개발자소계</h2>;
+}
 
+function App(props) {
   return (
-    <>
-      {loading ? (
-        <div>로딩중....</div>
-      ) : (
-        <>
-          {movies.map(function (ele) {
-            return (
-              <Movie
-                key={ele.id}
-                title={ele.title}
-                backdrop_path={ele.backdrop_path}
-                overview={ele.overview}
-                vote_average={ele.vote_average}
-                adult={ele.adult}
-                original_language={ele.original_language}
-                release_date={ele.release_date}
-                id={ele.id}
-              />
-            );
-          })}
-        </>
-      )}
-    </>
+    <BrowserRouter>
+      <Menu />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/popular" element={<MovieList apipath="popular" />} />
+        <Route
+          path="/now_playing"
+          element={<MovieList apipath="now_playing" />}
+        />
+        <Route path="/upcoming" element={<MovieList apipath="upcoming" />} />
+        <Route path="/count" element={<Clickc />} />
+      </Routes>
+    </BrowserRouter>
   );
+  //   return (
+  //     <
+
+  //     //     <div>
+  // //
+  // //     </div>
+  // //   );
+  //   )
 }
 export default App;
