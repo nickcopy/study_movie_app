@@ -26,6 +26,7 @@
   justify-content: space-between;
 }
 .lte {
+  position: relative;
   display: flex;
   margin: 8px;
 }
@@ -91,6 +92,7 @@
   margin-bottom: 10px;
 }
 .ty__top3__1 {
+  position: relative;
   display: flex;
   align-items: center;
   justify-self: center;

@@ -5,6 +5,8 @@ import MovieList from "./components/MoviesList";
 import Clickc from "./components/ClickConuter";
 import Menu from "./components/Menu";
 import YouTube from "./components/YouTube";
+import "./components/App.css";
+import Tailwind from "./components/Tailwind";
 function Home() {
   return <h2>홈</h2>;
 }
@@ -27,6 +29,7 @@ function App(props) {
         <Route path="/upcoming" element={<MovieList apipath="upcoming" />} />
         <Route path="/count" element={<Clickc />} />
         <Route path="/youtube" element={<YouTube />} />
+        <Route path="/tailwind" element={<Tailwind />} />
       </Routes>
     </HashRouter>
   );

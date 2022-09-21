@@ -41,6 +41,9 @@ function Menu() {
             <Link to="/youtube">youtube 클론</Link>
           </li>
           <li>
+            <Link to="/tailwind">Tailwind</Link>
+          </li>
+          <li>
             <Link to="/count">count</Link>
           </li>
         </ul>
