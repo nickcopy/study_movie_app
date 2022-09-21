@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 // import Movie from "./components/Movie";
 import MovieList from "./components/MoviesList";
 import Clickc from "./components/ClickConuter";
@@ -14,7 +14,7 @@ function About() {
 
 function App(props) {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Menu />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -28,15 +28,7 @@ function App(props) {
         <Route path="/count" element={<Clickc />} />
         <Route path="/youtube" element={<YouTube />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
-  //   return (
-  //     <
-
-  //     //     <div>
-  // //
-  // //     </div>
-  // //   );
-  //   )
 }
 export default App;

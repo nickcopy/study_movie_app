@@ -1,7 +1,14 @@
+.yt_main {
+  width: 720px;
+  background-color: rgb(77, 77, 77);
+}
 .yt__top {
-  background-color: grey;
+  background-color: rgb(43, 43, 43);
   display: flex;
   justify-content: space-between;
+}
+.top__w {
+  width: 600px;
 }
 .time {
   font-size: 25px;
@@ -29,14 +36,14 @@
   margin-top: 5px;
 }
 .ty__top2 {
-  background-color: gray;
+  background-color: rgb(43, 43, 43);
   display: flex;
   justify-content: space-between;
+  height: 70px;
 }
 .title {
-  margin-left: 20px;
   color: white;
-  font-size: 30px;
+  font-size: 40px;
 }
 .conserv {
   display: flex;
@@ -63,4 +70,121 @@
 .titleicon {
   background-color: red;
   color: white;
+  border-radius: 30%;
+  display: flex;
+  margin-top: 13px;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 35px;
+}
+.titleset {
+  display: flex;
+  justify-content: center;
+  margin-left: 10px;
+}
+.ty__top3 {
+  background-color: rgb(43, 43, 43);
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.ty__top3__1 {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  margin-top: 3px;
+  color: white;
+  border-radius: 10%;
+  background-color: rgb(99, 97, 97);
+  font-size: 18px;
+
+  margin-left: 15px;
+  margin-bottom: 7px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  margin-right: 15px;
+}
+.ty__top3__out {
+  display: flex;
+  margin-top: 10px;
+}
+.comicon {
+  margin-top: 4px;
+  padding-right: 5px;
+}
+.ty__top3__bo {
+  height: 30px;
+  border-right: 1px solid rgb(99, 97, 97);
+}
+.ty__top3__part2 {
+  display: flex;
+  justify-content: center;
+
+  padding-right: 10px;
+  width: 450px;
+}
+
+.ty__top3__part2 > div {
+  background-color: rgb(167, 167, 167);
+  color: white;
+  border-radius: 20px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+
+.ty__en_part1 {
+  height: 500px;
+  width: 720px;
+}
+.ty__buttom {
+  display: flex;
+  width: 640px;
+  background-color: rgb(24, 24, 24);
+  height: 80px;
+  margin-top: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+  justify-content: space-between;
+  color: white;
+}
+.ty__buttom > div {
+  width: 50px;
+  /* border: 1px solid red; */
+}
+.ty__buttom__text {
+  padding-top: -1px;
+  font-size: 2px;
+  display: flex;
+  justify-content: center;
+}
+.ty__button__plus {
+  width: 60px;
+}
+.ploli_icon > img {
+  border-radius: 50%;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.ploli_icon {
+  background-color: rgb(53, 53, 53);
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  display: flex;
+}
+.ploli_text {
+  height: 15px;
+  font-size: 1px;
 }

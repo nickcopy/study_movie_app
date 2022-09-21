@@ -1,4 +1,5 @@
 import "./YouTube.css";
+import { FaRegCompass } from "react-icons/fa";
 function YouTube() {
   return (
     <div className="yt_main">
@@ -8,17 +9,14 @@ function YouTube() {
           <span className="wifi">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              fill="none"
               viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="w-6 h-6"
-              width={25}
+              fill="currentColor"
+              className="w-6 h-6 "
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M8.288 15.038a5.25 5.25 0 017.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53.53-.53-.53a.75.75 0 011.06 0z"
+                fillRule="evenodd"
+                d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
+                clipRule="evenodd"
               />
             </svg>
           </span>
@@ -44,25 +42,23 @@ function YouTube() {
       </div>
       {/* //하단바 */}
       <div className="ty__top2">
-        <div>
-          <span>
+        <div className="titleset">
+          <div className="titleicon">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              fill="none"
               viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-6 h-6 titleicon"
-              width={50}
+              fill="currentColor"
+              className="w-6 h-6"
+              width={25}
             >
               <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"
+                fillRule="evenodd"
+                d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
+                clipRule="evenodd"
               />
             </svg>
-          </span>
-          <span className="title">YouTube</span>
+          </div>
+          <div className="title">YouTube</div>
         </div>
         <div className="icon conserv">
           <span>
@@ -117,6 +113,138 @@ function YouTube() {
             </svg>
           </span>
           <span className="propil">진우</span>
+        </div>
+      </div>
+      <div className="ty__top3">
+        <div className="ty__top3__bo">
+          <div className="ty__top3__1">
+            <div className="comicon">
+              <FaRegCompass />
+            </div>
+            탐색
+          </div>
+        </div>
+        <div className="ty__top3__part2">
+          <div>전체</div>
+          <div>새로운 맞춤 동영상</div>
+          <div>실시간</div>
+          <div>음악</div>
+        </div>
+      </div>
+
+      <div>
+        <img
+          className="ty__en_part1"
+          src="https://i.ytimg.com/an_webp/T-B1LsYS4pk/mqdefault_6s.webp?du=3000&sqp=CJKCqpkG&rs=AOn4CLB4cX700414Ryrt3C1FEUHVicDQZw"
+        ></img>
+      </div>
+
+      <div className="ploli_icon">
+        <img src="https://yt3.ggpht.com/ytc/AMLnZu9P3YKmVyOqZE3Dr00KNUFbNz1_kERynWtQDfV7IA=s68-c-k-c0x00ffffff-no-rj"></img>
+        <div>
+          <div>내가 모르고 있었던 진실 ㅋㅋ</div>
+          <div>노돌리</div>
+          <div className="ploli_text">조회수 2.6만 2시간전</div>
+        </div>
+      </div>
+      <div className="ty__buttom">
+        <div>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+              />
+            </svg>
+          </div>
+          <div className="ty__buttom__text">홈</div>
+        </div>
+        <div>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M15.91 11.672a.375.375 0 010 .656l-5.603 3.113a.375.375 0 01-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112z"
+              />
+            </svg>
+          </div>
+
+          <div className="ty__buttom__text">shorts</div>
+        </div>
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="w-6 h-6 ty__button__plus"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+            />
+          </svg>
+        </div>
+        <div>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M9 3.75H6.912a2.25 2.25 0 00-2.15 1.588L2.35 13.177a2.25 2.25 0 00-.1.661V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 00-2.15-1.588H15M2.25 13.5h3.86a2.25 2.25 0 012.012 1.244l.256.512a2.25 2.25 0 002.013 1.244h3.218a2.25 2.25 0 002.013-1.244l.256-.512a2.25 2.25 0 012.013-1.244h3.859M12 3v8.25m0 0l-3-3m3 3l3-3"
+              />
+            </svg>
+          </div>
+          <div className="ty__buttom__text">구독</div>
+        </div>
+        <div>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M21 7.5V18M15 7.5V18M3 16.811V8.69c0-.864.933-1.406 1.683-.977l7.108 4.061a1.125 1.125 0 010 1.954l-7.108 4.061A1.125 1.125 0 013 16.811z"
+              />
+            </svg>
+          </div>
+          <div className="ty__buttom__text">보관함</div>
         </div>
       </div>
     </div>
