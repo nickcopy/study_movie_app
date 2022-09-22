@@ -1,6 +1,18 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Menu.css";
 function Menu() {
+  const [darkmode, setdarkmode] = useState(false);
+  function toggle() {
+    setdarkmode(!darkmode);
+    if (!darkmode) {
+      console.log("on");
+      document.querySelector("body").classList.add("dark");
+    } else {
+      console.log("off");
+      document.querySelector("body").classList.remove("dark");
+    }
+  }
   return (
     <div>
       <nav>
@@ -45,6 +57,17 @@ function Menu() {
           </li>
           <li>
             <Link to="/count">count</Link>
+          </li>
+          <li>
+            <div className="text-white">
+              <input
+                id="toggle_dark"
+                type="checkbox"
+                checked={darkmode}
+                onChange={toggle}
+              ></input>
+              <label htmlFor="toggle_dark">다크</label>
+            </div>
           </li>
         </ul>
       </nav>
